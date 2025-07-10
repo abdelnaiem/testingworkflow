@@ -13,5 +13,8 @@ jobs:
    second_job:
       runs-on: ubuntu-latest
       steps:
-      - name: print second meesages
-        run: echo "print second meesages"
+      - name: checkout sources
+        uses: actions/checkout@v4.2.2
+      - name: checkout sources
+        run: ls -l
+
