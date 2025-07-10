@@ -1,0 +1,17 @@
+name: first workflow
+on:
+  push:
+     branches:
+       - main
+jobs:
+   first_job:
+      runs-on: ubuntu-latest
+      steps:
+      - name: print first meesages
+        run: echo "print first meesages"
+
+   second_job:
+      runs-on: ubuntu-latest
+      steps:
+      - name: print second meesages
+        run: echo "print second meesages"
