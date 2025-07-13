@@ -1,15 +1,15 @@
-name: first workflow
+name: testing nodejs app
 on:
   push:
      branches:
        - main
-       - "release/ ** "
+       - "release/**"
      paths:
-      - "src/ ** "
+      - "src/**"
   pull_request:
      branches:
        - main
-       - "release/ ** "
+       - "release/**"
 jobs:
   test:
     runs-on: ubuntu-latest
