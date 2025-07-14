@@ -1,5 +1,14 @@
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+         description: "Please add the correct env name"
+         required: true
+         default: "staging"
+         type: choise
+         options: 
+         - staging
+         - production
 jobs:
   first_job:
     runs-on: ubuntu-latest
