@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run first job
-        run: echo "Hello Manual"
+        run: echo "Hello Manual ${{inputs.environment}}"
     
