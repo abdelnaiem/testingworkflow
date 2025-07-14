@@ -5,7 +5,7 @@ on:
          description: "Please add the correct env name"
          required: true
          default: "staging"
-         type: choise
+         type: choice
          options: 
             - staging
             - production
