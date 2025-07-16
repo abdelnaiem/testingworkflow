@@ -1,3 +1,4 @@
+name: hyprid
 on:
   workflow_dispatch:
 
