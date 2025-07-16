@@ -1,0 +1,26 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  expressions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a deployment script
+        #run: ./deploy.sh
+        run: echo "ASD"
+
+      - name: Success notification
+        run: echo "Deployment succeeded"
+        if: success()
+
+      - name: Cleanup on failure
+        run: echo "Running cleanup after failed deployment"
+        if: failure()
+
+      - name: Always run notification
+        run: echo "This step runs always"
+        if: always()
+
+      - name: Cancellation handler
+        run: echo "Job was cancelled"
+        if: cancelled()
