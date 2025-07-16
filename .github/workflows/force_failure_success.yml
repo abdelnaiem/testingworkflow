@@ -10,5 +10,5 @@ jobs:
         run: |
           deprecated=true
           if [[ $deprecated ]]; then
-            echo "::failure::Deprecated function found"
+            echo "::error::Deprecated function found"
           fi
